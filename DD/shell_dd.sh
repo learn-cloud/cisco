@@ -1,5 +1,5 @@
 # /bin/bash
 
 echo "===================="
-echo "Welcome to CC folder"
+echo "Welcome to DD folder"
 echo "===================="
