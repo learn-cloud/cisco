@@ -1,23 +1,8 @@
-from flask import Flask, escape, request
+a = 10
+b = 20
 
-app = Flask(__name__)
+c = a+b
 
-@app.route('/')
-def hello():
-     return '''
-	    <!Doctype html>
-		<html>
-		<head>
-			<h1> Home Page </h1>
-		</head>
-		<body> 
-		<h2> this is the Home page body section </h2>
-		</body>
-		</html>
-	     '''
-
-@app.route('/about')
-def about():
-    return "<h1> About Page </h1>"
-if __name__ == '__main__':
-	app.run(debug=True)
+print('---------------------------')
+print ("adittion of 2 numbers",c)
+print('---------------------------')
