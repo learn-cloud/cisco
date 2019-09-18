@@ -1,12 +1,23 @@
-	from flask import Flask, escape, request
+from flask import Flask, escape, request
 
-	app = Flask(__name__)
+app = Flask(__name__)
 
-	@app.route('/')
-	def hello():
-	    name = request.args.get("name", "Anand")
-	    return f'Hello, {escape(name)}!'
+@app.route('/')
+def hello():
+     return '''
+	    <!Doctype html>
+		<html>
+		<head>
+			<h1> Home Page </h1>
+		</head>
+		<body> 
+		<h2> this is the Home page body section </h2>
+		</body>
+		</html>
+	     '''
 
-
-	if __name__ == '__main__':
-		app.run(debug=True)
+@app.route('/about')
+def about():
+    return "<h1> About Page </h1>"
+if __name__ == '__main__':
+	app.run(debug=True)
