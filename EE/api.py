@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    return "Welcome!. This is Flask Test Part 1"
+    return "Welcome!. This is Flask Test Part"
 
 if __name__ == "__main__":
     job_id = 1234
