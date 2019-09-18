@@ -4,5 +4,5 @@ b = 20
 c = a+b
 
 print('---------------------------')
-print ("adittion of two numbers",c)
+print ("adittion of 2 numbers ",c)
 print('---------------------------')
