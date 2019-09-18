@@ -5,6 +5,7 @@ stages {
     stage('Git-Checkout') {
         steps {
             script{
+                 checkout scm
                  sh 'sudo sh /root/test-j.sh '
                  result = readFile('folder-list.txt').trim()
                  echo result
